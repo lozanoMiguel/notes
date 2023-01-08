@@ -1,0 +1,44 @@
+.formContainer{
+  width: 35vw;
+  height: 10vh;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.title{
+  font-family: 'Bad Script', cursive;
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: -107px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note{
+  width: 28vw;
+  height: 16vh;
+  line-height: 150%;
+  padding: 5px 10px;
+  font-size: 27px ;
+  border-radius: 13px;
+  border: 2px solid black;
+  resize: none;
+  overflow: auto;
+}
+
+.addBtn{
+  height: 10vh;
+  width: 7vw;
+  margin: 5px;
+  color: #EB984E;
+  
+}
