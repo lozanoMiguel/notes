@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Note.css';
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import useDragger from '../hooks/useDragger.ts';
 
 export default function Note({ id, text, left, top, deleteNote }) {
@@ -16,6 +17,10 @@ export default function Note({ id, text, left, top, deleteNote }) {
           top: `${top}px`,
           left: `${left}px`
          }}>
+      <AiOutlineCloseCircle
+        className='btnClose'
+        onClick={ () => deleteNote(id) }
+        />
       <p className='dateNote'>
         { date }
       </p>

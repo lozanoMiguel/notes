@@ -29,6 +29,11 @@ function App() {
       const updateNotes = [...notes, note];
       setNotes(updateNotes);
     }
+  } 
+
+  const deleteNote = id => {
+    const updateNotes = notes.filter(note => note.id !== id);
+    setNotes(updateNotes);
   }
 
   return (
@@ -42,6 +47,7 @@ function App() {
             text={note.text}
             top={note.top}
             left={note.left}
+            deleteNote = {deleteNote}
           />
         )
       }
