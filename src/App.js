@@ -6,8 +6,8 @@ import { useState } from 'react';
 function App() {
 
   const [notes, setNotes] = useState([]);
-  const [top, setTop] = useState(224);
-  const [left, setLeft] = useState(800);
+  const [top, setTop] = useState(184);
+  const [left, setLeft] = useState(5);
 
   function numberTop(){
     let y = top + 27;

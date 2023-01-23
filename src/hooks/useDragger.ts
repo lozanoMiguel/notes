@@ -20,14 +20,14 @@ function useDragger(id){
     if(!container) throw new Error("Target element must have a parent");
 
     const onMouseDown = (e) =>{
-      console.log(container)
+      console.log("hola");
       isClicked.current = true;
       coords.current.startX = e.clientX;
       coords.current.startY = e.clientY;
     }
 
     const onMouseUp = (e) =>{
-      console.log(target)
+      console.log("chau");
       isClicked.current = false;
       coords.current.lastX = target.offsetLeft;
       coords.current.lastY = target.offsetTop;
@@ -35,6 +35,7 @@ function useDragger(id){
 
     const onMouseMove = (e) => {
       if(!isClicked.current) return;
+      console.log("esta ocurriendo");
 
       const nextX = e.clientX - coords.current.startX + coords.current.lastX;
       const nextY = e.clientY - coords.current.startY + coords.current.lastY;

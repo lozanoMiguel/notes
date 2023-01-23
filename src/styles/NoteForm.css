@@ -12,9 +12,10 @@
 
 .title{
   font-family: 'Bad Script', cursive;
-  font-size: 38px;
+  font-size: 45px;
   font-weight: 700;
   margin-left: -107px;
+  margin-bottom: -10px;
 }
 
 .form{
@@ -24,8 +25,8 @@
 }
 
 .note{
-  width: 28vw;
-  height: 16vh;
+  width: 547px;
+  height: 160px;
   line-height: 150%;
   padding: 5px 10px;
   font-size: 27px ;
@@ -36,9 +37,47 @@
 }
 
 .addBtn{
-  height: 10vh;
-  width: 7vw;
+  height: 200px;
+  width: 110px;
   margin: 5px;
-  color: #EB984E;
+  color: #EB984E;margin-bottom: -10px;
   
+}
+
+@media (max-width: 1200px){
+ .title{
+    font-size: 27px;
+    margin-left: -107px;
+    margin-bottom: -5px;
+  }
+  
+  .note{
+    width: 350px;
+    height: 120px;
+    font-size: 20px ;
+  }
+  
+  .addBtn{
+    height: 130px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 650px){
+  .title{
+    font-size: 18px;
+    margin-left: -107px;
+    margin-bottom: -5px;
+  }
+  
+  .note{
+    width: 190px;
+    height: 75px;
+    font-size: 12px ;
+  }
+  
+  .addBtn{
+    height: 105px;
+    width: 50px;
+  }
 }

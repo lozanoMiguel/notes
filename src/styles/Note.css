@@ -7,6 +7,7 @@
   box-shadow: 5px 10px 8px #888888;
   display: flex;
   flex-direction: column;
+  
 }
 
 .textNote{
@@ -32,3 +33,54 @@
   font-size: 15px;
   height: 20px;
 }
+
+@media (max-width: 1200px){
+  .noteContainer{
+    width: 115px;
+    height: 115px;
+  }
+  
+  .textNote{
+    margin: 0 4px;
+    font-size: 11px;
+    height: 85px;
+  }
+  
+  .dateNote{
+    margin: 0 4px;
+    font-size: 11px;
+    height: 15px;
+  }
+  
+  .btnClose{
+    margin: 0 2px;
+    font-size: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 650px){
+  .noteContainer{
+    width: 75px;
+    height: 75px;
+  }
+  
+  .textNote{
+    margin: 0 3px;
+    font-size: 9px;
+    height: 55px;
+  }
+  
+  .dateNote{
+    margin: 0 3px;
+    font-size: 8px;
+    height: 10px;
+  }
+  
+  .btnClose{
+    margin: 0 .5px;
+    font-size: 15px;
+    height: 10px;
+  }
+}
+
